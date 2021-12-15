@@ -234,7 +234,6 @@ pytz==2021.3
 PyWavelets @ file:///C:/ci/pywavelets_1601658407916/work
 pywin32==228
 pywin32-ctypes==0.2.0
-pywinpty==0.5.7
 PyYAML==5.4.1
 pyzmq @ file:///C:/ci/pyzmq_1628276144921/work
 QDarkStyle==2.8.1
