@@ -1,14 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import streamlit as st
-
-
-# In[2]:
-
 
 """
     Dataset: http://www.gutenberg.org/cache/epub/5200/pg5200.txt
@@ -24,34 +14,18 @@ lines = []
 for i in file:
     lines.append(i)
 
-
-# In[3]:
-
-
 for i in lines:
     data = ' '. join(lines)
     
 data = data.replace('\n', '').replace('\r', '').replace('\ufeff', '')
 length=data
 
-
-# In[4]:
-
-
 dataLength=len(length)
 dataLength
-
-
-# In[5]:
-
 
 word=st.text_input("Word","")
 wordLength=len(word)
 st.write(wordLength)
-
-
-# In[6]:
-
 
 letter=0
 letterInText=0
@@ -68,10 +42,6 @@ for initialize in range(dataLength):
     startLetters.append(0)
     endLetters.append(0)
     wordPredict.append(0)
-
-
-# In[ ]:
-
 
 initialize=0
 
@@ -116,13 +86,9 @@ for index in range(dataLength):
         break
 
 
-# In[ ]:
-
-
 print("Typed Word: ",searchedWord)
 
 for index in range(dataLength):
     if(wordPredict[index]!=0):
         print("Word Predict: ",wordPredict[index])
         st.write("Word Predict: ",wordPredict[index])
-
