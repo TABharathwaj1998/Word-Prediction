@@ -1,1 +1,4 @@
+anaconda-navigator==2.0.3
+jupyter==1.0.0
+python-magic==0.4.24
 streamlit==1.2.0
